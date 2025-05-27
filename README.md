@@ -57,3 +57,19 @@ Menghindari error saat akses variabel yang belum ada.
 Kapan digunakan?
 Saat ingin cek apakah form sudah di-submit (misal: if(isset($_POST['submit']))).
 Saat ingin memeriksa apakah variabel sudah ada sebelum digunakan.
+
+
+
+1. isset()
+   - Mengecek apakah variabel sudah diset dan nilainya bukan NULL.
+2. session
+   - Digunakan untuk menyimpan data pengguna selama sesi. Biasa dipakai untuk login/logout.
+4. Metode POST dan GET
+   - GET: Data dikirim melalui URL, cocok untuk pencarian.
+   - POST: Data dikirim secara tersembunyi, lebih aman, cocok untuk form penting.
+6. empty()
+   - Mengecek apakah variabel kosong (termasuk "", 0, NULL, array kosong, dll).
+8. exit
+   - Menghentikan eksekusi program. Penting setelah header("Location: ...") untuk mencegah halaman tetap dijalankan.
+10. Proteksi halaman dengan session
+    - Melindungi halaman agar hanya bisa diakses oleh user yang sudah login, menggunakan session dan pengecekan isset().
